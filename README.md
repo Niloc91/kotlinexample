@@ -1,2 +1,0 @@
-# kotlinexample
-kotlin examples
