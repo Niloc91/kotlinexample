@@ -10,7 +10,7 @@ class testController constructor(
         private val dataModelStorage: DataModelStorage
 ) {
 
-    @RequestMapping("/answer")
+    @GetMapping("/answer")
     fun answer() = 42
 
 
