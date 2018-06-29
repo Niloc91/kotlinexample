@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  example-local-web:
+    image: example:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - "OFFER_BFF_PLAYGROUND_DB_URL=offer-bff-stack-local-db:5432/postgres"
+    command: ["java","-jar","-Dspring.profiles.active=default", "-Xms32m", "-Xmx1024m", "/opt/kotlin/kotlinexample.jar"]
+
+volumes:
+  offer-bff-stack-local-db-volume: {}
