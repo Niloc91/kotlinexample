@@ -1,6 +1,7 @@
 
 FROM openjdk:8-jre-alpine
 
+
 EXPOSE 8080
 
 ENV JAVA_SERVICE_SOURCE_JAR build/libs/kotlinexample*.jar
