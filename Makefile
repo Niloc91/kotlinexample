@@ -1,5 +1,5 @@
 
-DOCKER_SERVICE_WEB_IMAGE_TAG="example:latest"
+DOCKER_SERVICE_WEB_IMAGE_TAG="example-builder:latest"
 DOCKER_FILE_WEB="docker/app/Dockerfile"
 DOCKER_FILE_BUILD="docker/builder/Dockerfile"
 
@@ -11,3 +11,4 @@ app.build:
 
 app.up: app.build
 	docker-compose -f $(DOCKERCOMPOSE_LOCAL_FILE) up
+
